@@ -1,0 +1,25 @@
+Development server
+==================
+This system runs on vagrant & puppet. Please do not
+change configuration files in /vagrant/environments
+or you may corrupt your installation.
+
+Connect to host with dev.loc
+----------------------------
+Please add the following line to the hosts file of
+the vagrant host (you will need admin privs):
+192.168.56.150 dev.loc
+
+Mac:  /private/etc/hosts
+WIN:  C:\Windows\System32\drivers\etc\hosts
+
+Update PHP configuration
+------------------------
+Please update your box' php config with:
+date.timezone = Europe/Berlin
+
+...in files:
+/etc/php5/apache2/php.ini
+/etc/php5/cli/php.ini
+
+Have fun!
